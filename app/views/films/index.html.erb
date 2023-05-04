@@ -1,0 +1,12 @@
+
+<h3>Watch all Films</h3>
+
+<div id="films">
+  <% @films.each do |film| %>
+    <%= render film %>
+   
+  <% end %>
+</div>
+
+<button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "New film", new_film_path %></button>
+
